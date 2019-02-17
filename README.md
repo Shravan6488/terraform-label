@@ -33,7 +33,7 @@ Now reference the label when creating an instance (for example):
 
 ```hcl
 resource "aws_instance" "eg_prod_bastion_public" {
-  instance_type = "t1.micro"
+  instance_type = "t2.micro"
   tags          = "${module.eg_prod_bastion_label.tags}"
 }
 ```
